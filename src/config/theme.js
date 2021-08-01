@@ -10,8 +10,11 @@ export const theme = {
     primaryButtonTextColor: Colors.white,
 
     primaryImageBackgroundColor: Colors.black,
+    secondaryImageBackgroundColor: Colors.white,
 
     primaryHeaderBackgroundColor: Colors.brightPink,
     primaryHeaderTintColor: Colors.white,
+
+    primaryLoaderColor: Colors.brightPink,
   },
 };

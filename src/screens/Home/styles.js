@@ -20,6 +20,14 @@ const styles = StyleSheet.create({
   image: {
     width: 150,
     height: 150,
+    backgroundColor: colors.secondaryImageBackgroundColor,
+  },
+  emptyListContainer: {
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  emptyListMessage: {
+    color: colors.secondaryImageBackgroundColor,
   },
 });
 
