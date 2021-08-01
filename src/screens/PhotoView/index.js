@@ -1,9 +1,13 @@
 import React from 'react';
-import {View, Image, Dimensions} from 'react-native';
+import {View, Dimensions} from 'react-native';
 import ImageZoom from 'react-native-image-pan-zoom';
+import FastImage from 'react-native-fast-image';
 
 import styles from './styles';
 
+/*
+ * Photo View Screen
+ */
 const PhotoView = ({route}) => {
   const {item} = route.params;
 
@@ -20,8 +24,7 @@ const PhotoView = ({route}) => {
         cropHeight={screenHeight}
         imageWidth={screenWidth}
         imageHeight={imageHeight}>
-        <Image
-          source={{uri: item.download_url}}
+        <FastImage
           style={[
             styles.imageView,
             {
@@ -29,6 +32,11 @@ const PhotoView = ({route}) => {
               height: imageHeight,
             },
           ]}
+          source={{
+            uri: item.download_url,
+            cache: FastImage.cacheControl.immutable,
+            priority: FastImage.priority.normal,
+          }}
         />
       </ImageZoom>
     </View>
