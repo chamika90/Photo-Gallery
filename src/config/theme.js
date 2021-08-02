@@ -19,5 +19,7 @@ export const theme = {
 
     success: Colors.vidaLoca,
     error: Colors.darkRed,
+
+    progressBarColor: Colors.brightPink,
   },
 };
