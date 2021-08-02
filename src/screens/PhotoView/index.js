@@ -7,6 +7,7 @@ import {
   PermissionsAndroid,
   Platform,
   Alert,
+  Share,
 } from 'react-native';
 import ImageZoom from 'react-native-image-pan-zoom';
 import FastImage from 'react-native-fast-image';
@@ -117,6 +118,20 @@ const PhotoView = ({route}) => {
       });
   };
 
+  const handlePhotoSharing = async () => {
+    try {
+      const shareOptions = {
+        message: item.download_url,
+      };
+      await Share.share(shareOptions);
+    } catch (error) {
+      Toast.show({
+        text1: 'Failed to share image. Please try again.',
+        type: 'error',
+      });
+    }
+  };
+
   return (
     <View style={styles.container}>
       <ImageZoom
@@ -146,6 +161,12 @@ const PhotoView = ({route}) => {
           </View>
         ) : null}
         <View style={styles.actionButtonContainer}>
+          <TouchableOpacity
+            style={styles.downloadIconContainer}
+            onPress={() => handlePhotoSharing()}>
+            <Image style={styles.downloadIcon} source={Images.icons.ic_share} />
+          </TouchableOpacity>
+
           <TouchableOpacity
             style={styles.downloadIconContainer}
             onPress={() => handleDownload()}>
