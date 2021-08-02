@@ -16,5 +16,8 @@ export const theme = {
     primaryHeaderTintColor: Colors.white,
 
     primaryLoaderColor: Colors.brightPink,
+
+    success: Colors.vidaLoca,
+    error: Colors.darkRed,
   },
 };
