@@ -12,7 +12,7 @@ export const theme = {
     primaryImageBackgroundColor: Colors.black,
     secondaryImageBackgroundColor: Colors.white,
 
-    primaryHeaderBackgroundColor: Colors.brightPink,
+    primaryHeaderBackgroundColor: Colors.black,
     primaryHeaderTintColor: Colors.white,
 
     primaryLoaderColor: Colors.brightPink,
