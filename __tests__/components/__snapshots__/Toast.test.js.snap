@@ -1,0 +1,30 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Toast should match snapshot 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "alignItems": "center",
+        "borderRadius": 30,
+        "flexDirection": "row",
+        "paddingHorizontal": 26,
+        "paddingVertical": 8,
+      },
+      Object {
+        "backgroundColor": "green",
+      },
+    ]
+  }
+>
+  <Text
+    style={
+      Object {
+        "color": "white",
+      }
+    }
+  >
+    Downloaded
+  </Text>
+</View>
+`;

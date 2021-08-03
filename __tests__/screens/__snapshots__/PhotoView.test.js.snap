@@ -1,0 +1,196 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PhotoView should match snapshot 1`] = `
+<View
+  style={
+    Object {
+      "alignItems": "center",
+      "backgroundColor": "#000000",
+      "flex": 1,
+      "justifyContent": "center",
+    }
+  }
+>
+  <View
+    onMoveShouldSetResponder={[Function]}
+    onMoveShouldSetResponderCapture={[Function]}
+    onResponderEnd={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderReject={[Function]}
+    onResponderRelease={[Function]}
+    onResponderStart={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    onStartShouldSetResponderCapture={[Function]}
+    style={
+      Object {
+        "alignItems": "center",
+        "backgroundColor": "transparent",
+        "height": 1334,
+        "justifyContent": "center",
+        "overflow": "hidden",
+        "width": 750,
+      }
+    }
+  >
+    <View
+      renderToHardwareTextureAndroid={true}
+      style={
+        Object {
+          "transform": Array [
+            Object {
+              "scale": 1,
+            },
+            Object {
+              "translateX": 0,
+            },
+            Object {
+              "translateY": 0,
+            },
+          ],
+        }
+      }
+    >
+      <View
+        onLayout={[Function]}
+        style={
+          Object {
+            "height": 486.66666666666663,
+            "width": 750,
+          }
+        }
+      >
+        <View
+          style={
+            Array [
+              Object {
+                "overflow": "hidden",
+              },
+              Array [
+                Object {
+                  "margin": 10,
+                },
+                Object {
+                  "height": 486.66666666666663,
+                  "width": 730,
+                },
+              ],
+            ]
+          }
+        >
+          <FastImageView
+            resizeMode="cover"
+            source={
+              Object {
+                "cache": "immutable",
+                "priority": "normal",
+                "uri": "https://picsum.photos/id/1/5616/3744",
+              }
+            }
+            style={
+              Object {
+                "bottom": 0,
+                "left": 0,
+                "position": "absolute",
+                "right": 0,
+                "top": 0,
+              }
+            }
+          />
+        </View>
+      </View>
+    </View>
+  </View>
+  <View
+    style={
+      Object {
+        "alignItems": "center",
+        "bottom": 30,
+        "flexDirection": "column",
+        "height": 60,
+        "justifyContent": "flex-end",
+        "left": 0,
+        "position": "absolute",
+        "width": "100%",
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+          "flexDirection": "row",
+          "height": 50,
+          "justifyContent": "flex-end",
+          "width": "100%",
+        }
+      }
+    >
+      <View
+        accessible={true}
+        focusable={true}
+        onClick={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          Object {
+            "marginHorizontal": 10,
+            "opacity": 1,
+            "padding": 10,
+          }
+        }
+      >
+        <Image
+          source={
+            Object {
+              "testUri": "../../../src/resources/images/icons/icShare/ic_share.png",
+            }
+          }
+          style={
+            Object {
+              "tintColor": "white",
+            }
+          }
+        />
+      </View>
+      <View
+        accessible={true}
+        focusable={true}
+        onClick={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          Object {
+            "marginHorizontal": 10,
+            "opacity": 1,
+            "padding": 10,
+          }
+        }
+      >
+        <Image
+          source={
+            Object {
+              "testUri": "../../../src/resources/images/icons/icDownload/ic_download.png",
+            }
+          }
+          style={
+            Object {
+              "tintColor": "white",
+            }
+          }
+        />
+      </View>
+    </View>
+  </View>
+</View>
+`;
