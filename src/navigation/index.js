@@ -19,8 +19,16 @@ const HomeStackScreen = () => (
       headerTintColor: colors.primaryHeaderTintColor,
       headerTitleAlign: 'center',
     }}>
-    <HomeStack.Screen name="Home" component={HomeScreen} />
-    <HomeStack.Screen name="PhotoView" component={PhotoViewScreen} />
+    <HomeStack.Screen
+      name="Home"
+      component={HomeScreen}
+      options={{title: 'My Gallery'}}
+    />
+    <HomeStack.Screen
+      name="PhotoView"
+      component={PhotoViewScreen}
+      options={{title: ''}}
+    />
   </HomeStack.Navigator>
 );
 
