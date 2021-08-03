@@ -1,196 +1,436 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`PhotoView should match snapshot 1`] = `
-<View
-  style={
-    Object {
-      "alignItems": "center",
-      "backgroundColor": "#000000",
-      "flex": 1,
-      "justifyContent": "center",
-    }
-  }
->
+Array [
   <View
-    onMoveShouldSetResponder={[Function]}
-    onMoveShouldSetResponderCapture={[Function]}
-    onResponderEnd={[Function]}
-    onResponderGrant={[Function]}
-    onResponderMove={[Function]}
-    onResponderReject={[Function]}
-    onResponderRelease={[Function]}
-    onResponderStart={[Function]}
-    onResponderTerminate={[Function]}
-    onResponderTerminationRequest={[Function]}
-    onStartShouldSetResponder={[Function]}
-    onStartShouldSetResponderCapture={[Function]}
     style={
       Object {
         "alignItems": "center",
-        "backgroundColor": "transparent",
-        "height": 1334,
+        "backgroundColor": "#000000",
+        "flex": 1,
         "justifyContent": "center",
-        "overflow": "hidden",
-        "width": 750,
       }
     }
   >
     <View
-      renderToHardwareTextureAndroid={true}
+      onMoveShouldSetResponder={[Function]}
+      onMoveShouldSetResponderCapture={[Function]}
+      onResponderEnd={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderReject={[Function]}
+      onResponderRelease={[Function]}
+      onResponderStart={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      onStartShouldSetResponderCapture={[Function]}
       style={
         Object {
-          "transform": Array [
-            Object {
-              "scale": 1,
-            },
-            Object {
-              "translateX": 0,
-            },
-            Object {
-              "translateY": 0,
-            },
-          ],
+          "alignItems": "center",
+          "backgroundColor": "transparent",
+          "height": 1334,
+          "justifyContent": "center",
+          "overflow": "hidden",
+          "width": 750,
         }
       }
     >
       <View
-        onLayout={[Function]}
+        renderToHardwareTextureAndroid={true}
         style={
           Object {
-            "height": 486.66666666666663,
-            "width": 750,
+            "transform": Array [
+              Object {
+                "scale": 1,
+              },
+              Object {
+                "translateX": 0,
+              },
+              Object {
+                "translateY": 0,
+              },
+            ],
           }
         }
       >
         <View
+          onLayout={[Function]}
           style={
-            Array [
-              Object {
-                "overflow": "hidden",
-              },
-              Array [
-                Object {
-                  "margin": 10,
-                },
-                Object {
-                  "height": 486.66666666666663,
-                  "width": 730,
-                },
-              ],
-            ]
+            Object {
+              "height": 486.66666666666663,
+              "width": 750,
+            }
           }
         >
-          <FastImageView
-            resizeMode="cover"
+          <View
+            style={
+              Array [
+                Object {
+                  "overflow": "hidden",
+                },
+                Array [
+                  Object {
+                    "margin": 10,
+                  },
+                  Object {
+                    "height": 486.66666666666663,
+                    "width": 730,
+                  },
+                ],
+              ]
+            }
+          >
+            <FastImageView
+              resizeMode="cover"
+              source={
+                Object {
+                  "cache": "immutable",
+                  "priority": "normal",
+                  "uri": "https://picsum.photos/id/1/5616/3744",
+                }
+              }
+              style={
+                Object {
+                  "bottom": 0,
+                  "left": 0,
+                  "position": "absolute",
+                  "right": 0,
+                  "top": 0,
+                }
+              }
+            />
+          </View>
+        </View>
+      </View>
+    </View>
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+          "bottom": 30,
+          "flexDirection": "column",
+          "height": 60,
+          "justifyContent": "flex-end",
+          "left": 0,
+          "position": "absolute",
+          "width": "100%",
+        }
+      }
+    >
+      <View
+        style={
+          Object {
+            "alignItems": "center",
+            "flexDirection": "row",
+            "height": 50,
+            "justifyContent": "flex-end",
+            "width": "100%",
+          }
+        }
+      >
+        <View
+          accessible={true}
+          focusable={true}
+          onClick={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            Object {
+              "alignItems": "center",
+              "flex": 1,
+              "justifyContent": "center",
+              "marginHorizontal": 10,
+              "opacity": 1,
+              "padding": 10,
+            }
+          }
+        >
+          <Image
             source={
               Object {
-                "cache": "immutable",
-                "priority": "normal",
-                "uri": "https://picsum.photos/id/1/5616/3744",
+                "testUri": "../../../src/resources/images/icons/icDetails/ic_details.png",
               }
             }
             style={
               Object {
-                "bottom": 0,
-                "left": 0,
-                "position": "absolute",
-                "right": 0,
-                "top": 0,
+                "tintColor": "white",
+              }
+            }
+          />
+        </View>
+        <View
+          accessible={true}
+          focusable={true}
+          onClick={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            Object {
+              "alignItems": "center",
+              "flex": 1,
+              "justifyContent": "center",
+              "marginHorizontal": 10,
+              "opacity": 1,
+              "padding": 10,
+            }
+          }
+        >
+          <Image
+            source={
+              Object {
+                "testUri": "../../../src/resources/images/icons/icShare/ic_share.png",
+              }
+            }
+            style={
+              Object {
+                "tintColor": "white",
+              }
+            }
+          />
+        </View>
+        <View
+          accessible={true}
+          focusable={true}
+          onClick={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            Object {
+              "alignItems": "center",
+              "flex": 1,
+              "justifyContent": "center",
+              "marginHorizontal": 10,
+              "opacity": 1,
+              "padding": 10,
+            }
+          }
+        >
+          <Image
+            source={
+              Object {
+                "testUri": "../../../src/resources/images/icons/icDownload/ic_download.png",
+              }
+            }
+            style={
+              Object {
+                "tintColor": "white",
               }
             }
           />
         </View>
       </View>
     </View>
-  </View>
-  <View
-    style={
-      Object {
-        "alignItems": "center",
-        "bottom": 30,
-        "flexDirection": "column",
-        "height": 60,
-        "justifyContent": "flex-end",
-        "left": 0,
-        "position": "absolute",
-        "width": "100%",
-      }
+  </View>,
+  <Modal
+    animationType="none"
+    deviceHeight={null}
+    deviceWidth={null}
+    hardwareAccelerated={false}
+    hideModalContentWhileAnimating={false}
+    onBackdropPress={[Function]}
+    onModalHide={[Function]}
+    onModalWillHide={[Function]}
+    onModalWillShow={[Function]}
+    onRequestClose={[Function]}
+    panResponderThreshold={4}
+    scrollHorizontal={false}
+    scrollOffset={0}
+    scrollOffsetMax={0}
+    scrollTo={null}
+    statusBarTranslucent={false}
+    supportedOrientations={
+      Array [
+        "portrait",
+        "landscape",
+      ]
     }
+    swipeThreshold={100}
+    transparent={true}
+    visible={false}
   >
     <View
+      accessible={true}
+      focusable={true}
+      forwardedRef={[Function]}
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
       style={
         Object {
-          "alignItems": "center",
-          "flexDirection": "row",
-          "height": 50,
-          "justifyContent": "flex-end",
-          "width": "100%",
+          "backgroundColor": "black",
+          "bottom": 0,
+          "height": 1334,
+          "left": 0,
+          "opacity": 0,
+          "position": "absolute",
+          "right": 0,
+          "top": 0,
+          "width": 750,
         }
       }
+    />
+    <View
+      deviceHeight={null}
+      deviceWidth={null}
+      forwardedRef={[Function]}
+      hideModalContentWhileAnimating={false}
+      onBackdropPress={[Function]}
+      onModalHide={[Function]}
+      onModalWillHide={[Function]}
+      onModalWillShow={[Function]}
+      panResponderThreshold={4}
+      pointerEvents="box-none"
+      scrollHorizontal={false}
+      scrollOffset={0}
+      scrollOffsetMax={0}
+      scrollTo={null}
+      statusBarTranslucent={false}
+      style={
+        Object {
+          "flex": 1,
+          "justifyContent": "flex-end",
+          "margin": 0,
+          "transform": Array [
+            Object {
+              "translateY": 0,
+            },
+          ],
+        }
+      }
+      supportedOrientations={
+        Array [
+          "portrait",
+          "landscape",
+        ]
+      }
+      swipeThreshold={100}
     >
       <View
-        accessible={true}
-        focusable={true}
-        onClick={[Function]}
-        onResponderGrant={[Function]}
-        onResponderMove={[Function]}
-        onResponderRelease={[Function]}
-        onResponderTerminate={[Function]}
-        onResponderTerminationRequest={[Function]}
-        onStartShouldSetResponder={[Function]}
         style={
           Object {
-            "marginHorizontal": 10,
-            "opacity": 1,
-            "padding": 10,
+            "alignItems": "center",
+            "backgroundColor": "#fff",
+            "borderColor": "rgba(0, 0, 0, 0.1)",
+            "borderTopLeftRadius": 15,
+            "borderTopRightRadius": 15,
+            "justifyContent": "center",
+            "padding": 22,
           }
         }
       >
-        <Image
-          source={
-            Object {
-              "testUri": "../../../src/resources/images/icons/icShare/ic_share.png",
-            }
-          }
+        <View
           style={
             Object {
-              "tintColor": "white",
+              "width": "100%",
             }
           }
-        />
-      </View>
-      <View
-        accessible={true}
-        focusable={true}
-        onClick={[Function]}
-        onResponderGrant={[Function]}
-        onResponderMove={[Function]}
-        onResponderRelease={[Function]}
-        onResponderTerminate={[Function]}
-        onResponderTerminationRequest={[Function]}
-        onStartShouldSetResponder={[Function]}
-        style={
-          Object {
-            "marginHorizontal": 10,
-            "opacity": 1,
-            "padding": 10,
-          }
-        }
-      >
-        <Image
-          source={
-            Object {
-              "testUri": "../../../src/resources/images/icons/icDownload/ic_download.png",
-            }
-          }
-          style={
-            Object {
-              "tintColor": "white",
-            }
-          }
-        />
+        >
+          <View>
+            <View
+              style={
+                Object {
+                  "flexDirection": "row",
+                  "paddingVertical": 5,
+                }
+              }
+            >
+              <Text
+                style={
+                  Object {
+                    "flex": 2,
+                    "fontWeight": "bold",
+                  }
+                }
+              >
+                Author
+              </Text>
+              <Text
+                style={
+                  Object {
+                    "flex": 3,
+                  }
+                }
+              >
+                Alejandro Escamilla
+              </Text>
+            </View>
+            <View
+              style={
+                Object {
+                  "flexDirection": "row",
+                  "paddingVertical": 5,
+                }
+              }
+            >
+              <Text
+                style={
+                  Object {
+                    "flex": 2,
+                    "fontWeight": "bold",
+                  }
+                }
+              >
+                Url
+              </Text>
+              <Text
+                style={
+                  Object {
+                    "flex": 3,
+                  }
+                }
+              >
+                https://unsplash.com/photos/LNRyGwIJr5c
+              </Text>
+            </View>
+            <View
+              style={
+                Object {
+                  "flexDirection": "row",
+                  "paddingVertical": 5,
+                }
+              }
+            >
+              <Text
+                style={
+                  Object {
+                    "flex": 2,
+                    "fontWeight": "bold",
+                  }
+                }
+              >
+                Download Url
+              </Text>
+              <Text
+                style={
+                  Object {
+                    "flex": 3,
+                  }
+                }
+              >
+                https://picsum.photos/id/1/5616/3744
+              </Text>
+            </View>
+          </View>
+        </View>
       </View>
     </View>
-  </View>
-</View>
+  </Modal>,
+]
 `;
