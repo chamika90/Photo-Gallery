@@ -34,6 +34,9 @@ const styles = StyleSheet.create({
   downloadIconContainer: {
     marginHorizontal: 10,
     padding: 10,
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
   },
   downloadIcon: {
     tintColor: 'white',

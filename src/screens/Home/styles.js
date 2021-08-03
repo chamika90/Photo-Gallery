@@ -16,8 +16,10 @@ const styles = StyleSheet.create({
   },
   imageContainer: {
     margin: 5,
+    borderRadius: 10,
   },
   image: {
+    borderRadius: 10,
     width: 150,
     height: 150,
     backgroundColor: colors.secondaryImageBackgroundColor,

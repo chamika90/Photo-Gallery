@@ -91,7 +91,7 @@ const Home = ({navigation}) => {
     <SafeAreaView style={styles.container}>
       <StatusBar
         backgroundColor={colors.primaryHeaderBackgroundColor}
-        barStyle="dark-content"
+        barStyle="light-content"
       />
 
       <ScrollView

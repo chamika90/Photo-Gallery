@@ -8,6 +8,7 @@ import {
   Platform,
   Alert,
   Share,
+  Text,
 } from 'react-native';
 import ImageZoom from 'react-native-image-pan-zoom';
 import FastImage from 'react-native-fast-image';
@@ -19,9 +20,20 @@ import {ProgressBar} from 'react-native-paper';
 import styles from './styles';
 import Res from 'resources';
 import {theme} from 'config/theme';
+import DetailView from './DetailView';
 
 const {colors} = theme;
 const {Images} = Res;
+
+const ActionButton = ({icon, onButtonPress}) => {
+  return (
+    <TouchableOpacity
+      style={styles.downloadIconContainer}
+      onPress={() => onButtonPress()}>
+      <Image style={styles.downloadIcon} source={icon} />
+    </TouchableOpacity>
+  );
+};
 
 /*
  * Photo View Screen
@@ -37,6 +49,7 @@ const PhotoView = ({route}) => {
 
   const [progress, setProgress] = useState(0);
   const [loading, setLoading] = useState(false);
+  const [isDetailModalVisible, setDetailModalStatus] = useState(false);
 
   const checkPermissionsAndroid = async () => {
     try {
@@ -133,51 +146,63 @@ const PhotoView = ({route}) => {
   };
 
   return (
-    <View style={styles.container}>
-      <ImageZoom
-        cropWidth={screenWidth}
-        cropHeight={screenHeight}
-        imageWidth={screenWidth}
-        imageHeight={imageHeight}>
-        <FastImage
-          style={[
-            styles.imageView,
-            {
-              width: screenWidth - 20,
-              height: imageHeight,
-            },
-          ]}
-          source={{
-            uri: item.download_url,
-            cache: FastImage.cacheControl.immutable,
-            priority: FastImage.priority.normal,
-          }}
-        />
-      </ImageZoom>
-      <View style={styles.bottomToolBar}>
-        {loading ? (
-          <View style={styles.progressBarContainer}>
-            <ProgressBar color={colors.progressBarColor} progress={progress} />
-          </View>
-        ) : null}
-        <View style={styles.actionButtonContainer}>
-          <TouchableOpacity
-            style={styles.downloadIconContainer}
-            onPress={() => handlePhotoSharing()}>
-            <Image style={styles.downloadIcon} source={Images.icons.ic_share} />
-          </TouchableOpacity>
-
-          <TouchableOpacity
-            style={styles.downloadIconContainer}
-            onPress={() => handleDownload()}>
-            <Image
-              style={styles.downloadIcon}
-              source={Images.icons.ic_download}
+    <>
+      <View style={styles.container}>
+        <ImageZoom
+          cropWidth={screenWidth}
+          cropHeight={screenHeight}
+          imageWidth={screenWidth}
+          imageHeight={imageHeight}>
+          <FastImage
+            style={[
+              styles.imageView,
+              {
+                width: screenWidth - 20,
+                height: imageHeight,
+              },
+            ]}
+            source={{
+              uri: item.download_url,
+              cache: FastImage.cacheControl.immutable,
+              priority: FastImage.priority.normal,
+            }}
+          />
+        </ImageZoom>
+        <View style={styles.bottomToolBar}>
+          {loading ? (
+            <View style={styles.progressBarContainer}>
+              <ProgressBar
+                color={colors.progressBarColor}
+                progress={progress}
+              />
+            </View>
+          ) : null}
+          <View style={styles.actionButtonContainer}>
+            <ActionButton
+              icon={Images.icons.ic_details}
+              onButtonPress={() => setDetailModalStatus(true)}
             />
-          </TouchableOpacity>
+
+            <ActionButton
+              icon={Images.icons.ic_share}
+              onButtonPress={() => handlePhotoSharing()}
+            />
+
+            <ActionButton
+              icon={Images.icons.ic_download}
+              onButtonPress={() => handleDownload()}
+            />
+          </View>
         </View>
       </View>
-    </View>
+      <DetailView
+        isVisible={isDetailModalVisible}
+        item={item}
+        onClose={() => {
+          setDetailModalStatus(false);
+        }}
+      />
+    </>
   );
 };
 
