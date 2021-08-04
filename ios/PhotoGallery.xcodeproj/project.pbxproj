@@ -24,6 +24,27 @@
 			remoteGlobalIDString = 13B07F861A680F5B00A75B9A;
 			remoteInfo = PhotoGallery;
 		};
+		706192C126BA5F6D0053BF63 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 706192BA26BA5F6D0053BF63 /* RNCNetInfo.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 134814201AA4EA6300B7C361;
+			remoteInfo = RNCNetInfo;
+		};
+		706192C326BA5F6D0053BF63 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 706192BA26BA5F6D0053BF63 /* RNCNetInfo.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = B5027B1B2237B30F00F1AABA;
+			remoteInfo = "RNCNetInfo-tvOS";
+		};
+		706192C526BA5F6D0053BF63 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 706192BA26BA5F6D0053BF63 /* RNCNetInfo.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 3846DAC62403170500B4283E;
+			remoteInfo = "RNCNetInfo-macOS";
+		};
 		70B8B01B26B7CF70005FFA41 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 70B8B01726B7CF6F005FFA41 /* RNCCameraRoll.xcodeproj */;
@@ -45,6 +66,7 @@
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = PhotoGallery/main.m; sourceTree = "<group>"; };
 		4270022E0DA0CA11D1FCA0F0 /* Pods-PhotoGallery-PhotoGalleryTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhotoGallery-PhotoGalleryTests.debug.xcconfig"; path = "Target Support Files/Pods-PhotoGallery-PhotoGalleryTests/Pods-PhotoGallery-PhotoGalleryTests.debug.xcconfig"; sourceTree = "<group>"; };
 		656A5CD503A7D52A2E49CBE6 /* libPods-PhotoGallery.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PhotoGallery.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		706192BA26BA5F6D0053BF63 /* RNCNetInfo.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = RNCNetInfo.xcodeproj; sourceTree = "<group>"; };
 		70B8B01726B7CF6F005FFA41 /* RNCCameraRoll.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RNCCameraRoll.xcodeproj; path = "../node_modules/@react-native-community/cameraroll/ios/RNCCameraRoll.xcodeproj"; sourceTree = "<group>"; };
 		73C4438A55CAA10A195FC218 /* Pods-PhotoGallery.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhotoGallery.debug.xcconfig"; path = "Target Support Files/Pods-PhotoGallery/Pods-PhotoGallery.debug.xcconfig"; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = PhotoGallery/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -125,6 +147,25 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		706192B926BA5F6D0053BF63 /* macos */ = {
+			isa = PBXGroup;
+			children = (
+				706192BA26BA5F6D0053BF63 /* RNCNetInfo.xcodeproj */,
+			);
+			name = macos;
+			path = "../node_modules/@react-native-community/netinfo/macos";
+			sourceTree = "<group>";
+		};
+		706192BB26BA5F6D0053BF63 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				706192C226BA5F6D0053BF63 /* libRNCNetInfo.a */,
+				706192C426BA5F6D0053BF63 /* libRNCNetInfo-tvOS.a */,
+				706192C626BA5F6D0053BF63 /* libRNCNetInfo-macOS.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		70B8B01826B7CF6F005FFA41 /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -136,6 +177,7 @@
 		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
+				706192B926BA5F6D0053BF63 /* macos */,
 				70B8B01726B7CF6F005FFA41 /* RNCCameraRoll.xcodeproj */,
 			);
 			name = Libraries;
@@ -244,6 +286,10 @@
 					ProductGroup = 70B8B01826B7CF6F005FFA41 /* Products */;
 					ProjectRef = 70B8B01726B7CF6F005FFA41 /* RNCCameraRoll.xcodeproj */;
 				},
+				{
+					ProductGroup = 706192BB26BA5F6D0053BF63 /* Products */;
+					ProjectRef = 706192BA26BA5F6D0053BF63 /* RNCNetInfo.xcodeproj */;
+				},
 			);
 			projectRoot = "";
 			targets = (
@@ -254,6 +300,27 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
+		706192C226BA5F6D0053BF63 /* libRNCNetInfo.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libRNCNetInfo.a;
+			remoteRef = 706192C126BA5F6D0053BF63 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		706192C426BA5F6D0053BF63 /* libRNCNetInfo-tvOS.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libRNCNetInfo-tvOS.a";
+			remoteRef = 706192C326BA5F6D0053BF63 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		706192C626BA5F6D0053BF63 /* libRNCNetInfo-macOS.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libRNCNetInfo-macOS.a";
+			remoteRef = 706192C526BA5F6D0053BF63 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
 		70B8B01C26B7CF70005FFA41 /* libRNCCameraRoll.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
