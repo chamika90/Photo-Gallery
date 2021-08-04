@@ -13,6 +13,7 @@ const styles = StyleSheet.create({
   },
   imageView: {
     margin: 10,
+    backgroundColor: colors.secondaryImageBackgroundColor,
   },
   actionButtonContainer: {
     height: 50,

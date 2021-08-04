@@ -6,6 +6,7 @@ const colors = {
   vividViolet: '#6610f2',
 
   athensGray: '#f5f6f9',
+  grey: '#9C9F9D',
 
   vidaLoca: '#44AE26',
   darkRed: '#E01B00',
