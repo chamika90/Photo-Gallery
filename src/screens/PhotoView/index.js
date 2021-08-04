@@ -8,7 +8,6 @@ import {
   Platform,
   Alert,
   Share,
-  Text,
 } from 'react-native';
 import ImageZoom from 'react-native-image-pan-zoom';
 import FastImage from 'react-native-fast-image';

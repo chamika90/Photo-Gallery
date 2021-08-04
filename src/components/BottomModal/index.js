@@ -4,6 +4,9 @@ import Modal from 'react-native-modal';
 
 import styles from './styles';
 
+/*
+ * Bottom Modal component
+ */
 const BottomModal = ({isVisible, children, onClose}) => {
   return (
     <Modal

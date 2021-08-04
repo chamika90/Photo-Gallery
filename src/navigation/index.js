@@ -10,6 +10,7 @@ import PhotoViewScreen from '../screens/PhotoView';
 const {colors} = theme;
 const HomeStack = createStackNavigator();
 
+// Home stack
 const HomeStackScreen = () => (
   <HomeStack.Navigator
     screenOptions={{

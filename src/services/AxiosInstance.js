@@ -5,6 +5,7 @@ import {HTTPStatusCode} from 'config/constants';
 
 const BASE_URL = 'https://picsum.photos';
 
+//Axios instance
 export const AxiosInstance = axios.create({
   baseURL: BASE_URL,
   timeout: 5000,

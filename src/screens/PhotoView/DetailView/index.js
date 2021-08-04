@@ -21,6 +21,9 @@ const DetailRow = ({title, value}) => {
   );
 };
 
+/*
+ * Detail view screen
+ */
 const DetailView = ({isVisible, item, onClose, onDownloadPress}) => {
   return (
     <BottomModal isVisible={isVisible} onClose={() => onClose()}>
