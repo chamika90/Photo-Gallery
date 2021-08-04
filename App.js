@@ -12,7 +12,7 @@ import SplashScreen from 'react-native-splash-screen';
 import Toast from 'react-native-toast-message';
 
 import AppNavigator from './src/navigation';
-import configureStore from './store/configureStore';
+import configureStore from './src/store/configureStore';
 import toastConfig from 'config/toastConfig';
 import {theme} from './src/config/theme';
 

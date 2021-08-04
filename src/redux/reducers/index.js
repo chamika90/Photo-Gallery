@@ -1,5 +1,5 @@
 /*
- * combines all th existing reducers
+ * combines all the existing reducers
  */
 import {combineReducers} from 'redux';
 import photoGalleryReducer from './photoGalleryReducer';
