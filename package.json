@@ -52,6 +52,10 @@
   },
   "jest": {
     "preset": "react-native",
+    "setupFilesAfterEnv": [
+      "@testing-library/jest-native/extend-expect",
+      "./jest-setup.js"
+    ],
     "testPathIgnorePatterns": [
       "/node_modules/"
     ],
@@ -59,7 +63,7 @@
       "^.+\\.(js|jsx)?$": "babel-jest"
     },
     "transformIgnorePatterns": [
-      "node_modules/(?!@react-native|react-native|rn-fetch-blob/.*)"
+      "node_modules/(?!@react-native|react-native|rn-fetch-blob|@react-native-community/netinfo/.*)"
     ],
     "moduleFileExtensions": [
       "js",
