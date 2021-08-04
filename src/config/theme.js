@@ -22,5 +22,6 @@ export const theme = {
 
     progressBarColor: Colors.brightPink,
     primaryLinkColor: Colors.ceruleanBlue,
+    primaryTextColor: Colors.white,
   },
 };
