@@ -9,6 +9,7 @@ const colors = {
 
   vidaLoca: '#44AE26',
   darkRed: '#E01B00',
+  ceruleanBlue: '#3366BB',
 };
 
 module.exports = colors;

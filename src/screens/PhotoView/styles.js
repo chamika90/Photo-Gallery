@@ -39,6 +39,8 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
   downloadIcon: {
+    width: 25,
+    height: 25,
     tintColor: 'white',
   },
   progressBarContainer: {

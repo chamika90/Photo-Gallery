@@ -201,6 +201,10 @@ const PhotoView = ({route}) => {
         onClose={() => {
           setDetailModalStatus(false);
         }}
+        onDownloadPress={() => {
+          setDetailModalStatus(false);
+          handleDownload();
+        }}
       />
     </>
   );

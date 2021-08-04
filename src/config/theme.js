@@ -7,7 +7,7 @@ export const theme = {
     primaryBackgroundColor: Colors.athensGray,
 
     primaryButtonBackgroundColor: Colors.vividViolet,
-    primaryButtonTextColor: Colors.white,
+    primaryButtonTextColor: Colors.brightPink,
 
     primaryImageBackgroundColor: Colors.black,
     secondaryImageBackgroundColor: Colors.white,
@@ -21,5 +21,6 @@ export const theme = {
     error: Colors.darkRed,
 
     progressBarColor: Colors.brightPink,
+    primaryLinkColor: Colors.ceruleanBlue,
   },
 };
