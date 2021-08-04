@@ -158,7 +158,9 @@ Array [
             }
             style={
               Object {
+                "height": 25,
                 "tintColor": "white",
+                "width": 25,
               }
             }
           />
@@ -192,7 +194,9 @@ Array [
             }
             style={
               Object {
+                "height": 25,
                 "tintColor": "white",
+                "width": 25,
               }
             }
           />
@@ -226,7 +230,9 @@ Array [
             }
             style={
               Object {
+                "height": 25,
                 "tintColor": "white",
+                "width": 25,
               }
             }
           />
@@ -387,12 +393,16 @@ Array [
                   }
                 }
               >
-                Url
+                Web
               </Text>
               <Text
+                onPress={[Function]}
                 style={
                   Object {
+                    "color": "#3366BB",
                     "flex": 3,
+                    "padding": 5,
+                    "textDecorationLine": "underline",
                   }
                 }
               >
@@ -400,31 +410,35 @@ Array [
               </Text>
             </View>
             <View
+              accessible={true}
+              focusable={true}
+              onClick={[Function]}
+              onResponderGrant={[Function]}
+              onResponderMove={[Function]}
+              onResponderRelease={[Function]}
+              onResponderTerminate={[Function]}
+              onResponderTerminationRequest={[Function]}
+              onStartShouldSetResponder={[Function]}
               style={
                 Object {
-                  "flexDirection": "row",
-                  "paddingVertical": 5,
+                  "alignItems": "center",
+                  "justifyContent": "center",
+                  "marginHorizontal": 30,
+                  "marginTop": 20,
+                  "opacity": 1,
+                  "padding": 10,
                 }
               }
             >
               <Text
                 style={
                   Object {
-                    "flex": 2,
+                    "color": "#e83e8c",
                     "fontWeight": "bold",
                   }
                 }
               >
-                Download Url
-              </Text>
-              <Text
-                style={
-                  Object {
-                    "flex": 3,
-                  }
-                }
-              >
-                https://picsum.photos/id/1/5616/3744
+                Download
               </Text>
             </View>
           </View>
