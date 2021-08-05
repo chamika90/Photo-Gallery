@@ -20,7 +20,7 @@ exports[`Toast should match snapshot 1`] = `
   <Text
     style={
       Object {
-        "color": "white",
+        "color": "#FFFFFF",
       }
     }
   >
