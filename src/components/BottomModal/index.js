@@ -1,5 +1,5 @@
 import React from 'react';
-import {View} from 'react-native';
+import { View } from 'react-native';
 import Modal from 'react-native-modal';
 
 import styles from './styles';
@@ -7,7 +7,7 @@ import styles from './styles';
 /*
  * Bottom Modal component
  */
-const BottomModal = ({isVisible, children, onClose}) => {
+const BottomModal = ({ isVisible, children, onClose }) => {
   return (
     <Modal
       isVisible={isVisible}

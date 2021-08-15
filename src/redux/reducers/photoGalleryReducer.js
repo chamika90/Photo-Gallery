@@ -6,7 +6,7 @@ const initialState = {
   hasNextPage: true,
 };
 
-const photoGalleryReducer = (state = initialState, {type, payload = {}}) => {
+const photoGalleryReducer = (state = initialState, { type, payload = {} }) => {
   switch (type) {
     //Save gallery images
     case types.SAVE_GALLERY_IMAGES:

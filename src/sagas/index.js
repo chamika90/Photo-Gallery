@@ -1,4 +1,4 @@
-import {takeLatest} from 'redux-saga/effects';
+import { takeLatest } from 'redux-saga/effects';
 
 import * as types from 'redux/actions/types';
 import * as photoGallerySaga from './photoGallerySaga';

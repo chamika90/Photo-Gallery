@@ -1,7 +1,7 @@
-import {Alert} from 'react-native';
+import { Alert } from 'react-native';
 import NetInfo from '@react-native-community/netinfo';
-import {EndPoints} from 'config/constants';
-import {AxiosInstance} from './AxiosInstance';
+import { EndPoints } from 'config/constants';
+import { AxiosInstance } from './AxiosInstance';
 
 //Get Image List
 export const requestImageList = async payload => {

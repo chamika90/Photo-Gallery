@@ -1,13 +1,13 @@
 import Toast from 'components/Toast';
 import React from 'react';
 
-import {theme} from 'config/theme';
+import { theme } from 'config/theme';
 
-const {colors} = theme;
+const { colors } = theme;
 
 const toastTypes = {
-  success: {color: colors.success},
-  error: {color: colors.error},
+  success: { color: colors.success },
+  error: { color: colors.error },
 };
 
 const SuccessToast = props => (

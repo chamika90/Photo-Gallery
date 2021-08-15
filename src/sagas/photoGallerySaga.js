@@ -1,6 +1,6 @@
-import {put} from 'redux-saga/effects';
-import {requestImageList} from 'services/ApiService';
-import {saveGalleryImages} from 'redux/actions/photoGalleryActions';
+import { put } from 'redux-saga/effects';
+import { requestImageList } from 'services/ApiService';
+import { saveGalleryImages } from 'redux/actions/photoGalleryActions';
 
 export function* getGalleryPhotos(action) {
   try {

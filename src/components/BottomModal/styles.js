@@ -1,4 +1,4 @@
-import {StyleSheet} from 'react-native';
+import { StyleSheet } from 'react-native';
 
 const styles = StyleSheet.create({
   bottomModal: {
@@ -14,7 +14,7 @@ const styles = StyleSheet.create({
     borderTopRightRadius: 15,
     borderColor: 'rgba(0, 0, 0, 0.1)',
   },
-  childrenWrapper: {width: '100%'},
+  childrenWrapper: { width: '100%' },
 });
 
 export default styles;

@@ -1,6 +1,6 @@
 import Res from 'resources';
 
-const {Colors} = Res;
+const { Colors } = Res;
 
 export const theme = {
   colors: {

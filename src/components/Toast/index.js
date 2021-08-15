@@ -1,16 +1,16 @@
 import React from 'react';
-import {View, Text, StyleSheet} from 'react-native';
+import { View, Text, StyleSheet } from 'react-native';
 
-import {theme} from 'config/theme';
+import { theme } from 'config/theme';
 
-const {colors} = theme;
+const { colors } = theme;
 
 /*
  * Toast component
  */
-const Toast = ({text1, settings}) => {
+const Toast = ({ text1, settings }) => {
   return (
-    <View style={[styles.container, {backgroundColor: settings.color}]}>
+    <View style={[styles.container, { backgroundColor: settings.color }]}>
       <Text style={styles.message}>{text1}</Text>
     </View>
   );

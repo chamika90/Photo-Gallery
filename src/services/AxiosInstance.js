@@ -1,7 +1,7 @@
 import axios from 'axios';
-import {Alert} from 'react-native';
+import { Alert } from 'react-native';
 
-import {HTTPStatusCode} from 'config/constants';
+import { HTTPStatusCode } from 'config/constants';
 
 const BASE_URL = 'https://picsum.photos';
 

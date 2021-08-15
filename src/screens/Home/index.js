@@ -1,4 +1,4 @@
-import React, {useEffect, useCallback} from 'react';
+import React, { useEffect, useCallback } from 'react';
 import {
   SafeAreaView,
   StatusBar,
@@ -7,17 +7,17 @@ import {
   Text,
   ScrollView,
 } from 'react-native';
-import {useDispatch, useSelector} from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import FastImage from 'react-native-fast-image';
 
-import {getGalleryImages} from 'redux/actions/photoGalleryActions';
-import {theme} from 'config/theme';
+import { getGalleryImages } from 'redux/actions/photoGalleryActions';
+import { theme } from 'config/theme';
 import styles from './styles';
 
-const {colors} = theme;
+const { colors } = theme;
 
 // Photo Card Component
-const PhotoCard = ({photo, onSelectPhoto}) => {
+const PhotoCard = ({ photo, onSelectPhoto }) => {
   return (
     <TouchableOpacity
       style={styles.imageContainer}
@@ -37,7 +37,7 @@ const PhotoCard = ({photo, onSelectPhoto}) => {
 /*
  * Home Screen
  */
-const Home = ({navigation}) => {
+const Home = ({ navigation }) => {
   const pageSize = 12;
   const dispatch = useDispatch();
   const imageList = useSelector(state => state.galleryReducer.photoList);
@@ -58,7 +58,11 @@ const Home = ({navigation}) => {
     dispatch(getGalleryImages(payload));
   }, [dispatch, page]);
 
-  const isCloseToBottom = ({layoutMeasurement, contentOffset, contentSize}) => {
+  const isCloseToBottom = ({
+    layoutMeasurement,
+    contentOffset,
+    contentSize,
+  }) => {
     const paddingToBottom = 20;
     return (
       layoutMeasurement.height + contentOffset.y >=
@@ -77,6 +81,7 @@ const Home = ({navigation}) => {
     return images.map(image => {
       return (
         <PhotoCard
+          testID="photoCard"
           key={image.id}
           photo={image}
           onSelectPhoto={photo => {
@@ -95,8 +100,9 @@ const Home = ({navigation}) => {
       />
 
       <ScrollView
+        testID="photoList"
         contentContainerStyle={styles.imageListContainer}
-        onScroll={({nativeEvent}) => {
+        onScroll={({ nativeEvent }) => {
           if (isCloseToBottom(nativeEvent)) {
             if (hasNextPage) {
               getImageList();
@@ -104,7 +110,7 @@ const Home = ({navigation}) => {
           }
         }}>
         {(imageList && renderImageList(imageList)) || (
-          <View style={styles.emptyListContainer}>
+          <View style={styles.emptyListContainer} testID="emptyView">
             <Text>No Images Found</Text>
           </View>
         )}

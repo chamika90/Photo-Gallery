@@ -1,13 +1,13 @@
 import React from 'react';
-import {NavigationContainer} from '@react-navigation/native';
-import {createStackNavigator} from '@react-navigation/stack';
+import { NavigationContainer } from '@react-navigation/native';
+import { createStackNavigator } from '@react-navigation/stack';
 
-import {theme} from 'config/theme';
+import { theme } from 'config/theme';
 
 import HomeScreen from '../screens/Home';
 import PhotoViewScreen from '../screens/PhotoView';
 
-const {colors} = theme;
+const { colors } = theme;
 const HomeStack = createStackNavigator();
 
 // Home stack
@@ -23,12 +23,12 @@ const HomeStackScreen = () => (
     <HomeStack.Screen
       name="Home"
       component={HomeScreen}
-      options={{title: 'My Gallery'}}
+      options={{ title: 'My Gallery' }}
     />
     <HomeStack.Screen
       name="PhotoView"
       component={PhotoViewScreen}
-      options={{title: ''}}
+      options={{ title: '' }}
     />
   </HomeStack.Navigator>
 );

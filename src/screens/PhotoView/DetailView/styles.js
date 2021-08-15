@@ -1,8 +1,8 @@
-import {StyleSheet} from 'react-native';
+import { StyleSheet } from 'react-native';
 
-import {theme} from 'config/theme';
+import { theme } from 'config/theme';
 
-const {colors} = theme;
+const { colors } = theme;
 
 const styles = StyleSheet.create({
   detailContainer: {
@@ -13,7 +13,7 @@ const styles = StyleSheet.create({
     flex: 2,
     fontWeight: 'bold',
   },
-  detailValue: {flex: 3},
+  detailValue: { flex: 3 },
   downloadButton: {
     justifyContent: 'center',
     alignItems: 'center',

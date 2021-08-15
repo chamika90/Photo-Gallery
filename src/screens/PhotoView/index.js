@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, { useState } from 'react';
 import {
   View,
   Dimensions,
@@ -14,17 +14,17 @@ import FastImage from 'react-native-fast-image';
 import CameraRoll from '@react-native-community/cameraroll';
 import RNFetchBlob from 'rn-fetch-blob';
 import Toast from 'react-native-toast-message';
-import {ProgressBar} from 'react-native-paper';
+import { ProgressBar } from 'react-native-paper';
 
 import styles from './styles';
 import Res from 'resources';
-import {theme} from 'config/theme';
+import { theme } from 'config/theme';
 import DetailView from './DetailView';
 
-const {colors} = theme;
-const {Images} = Res;
+const { colors } = theme;
+const { Images } = Res;
 
-const ActionButton = ({icon, onButtonPress}) => {
+const ActionButton = ({ icon, onButtonPress }) => {
   return (
     <TouchableOpacity
       style={styles.downloadIconContainer}
@@ -37,8 +37,8 @@ const ActionButton = ({icon, onButtonPress}) => {
 /*
  * Photo View Screen
  */
-const PhotoView = ({route}) => {
-  const {item} = route.params;
+const PhotoView = ({ route }) => {
+  const { item } = route.params;
 
   const aspectRatio = item.height / item.width;
   const screenWidth = Dimensions.get('window').width;
@@ -49,7 +49,6 @@ const PhotoView = ({route}) => {
   const [progress, setProgress] = useState(0);
   const [loading, setLoading] = useState(false);
   const [isDetailModalVisible, setDetailModalStatus] = useState(false);
-
   const checkPermissionsAndroid = async () => {
     try {
       const granted = await PermissionsAndroid.request(
@@ -67,15 +66,15 @@ const PhotoView = ({route}) => {
       Alert.alert(
         'Save remote Image',
         'Please Grant Permission to save Image',
-        [{text: 'OK', onPress: () => console.log('OK Pressed')}],
-        {cancelable: false},
+        [{ text: 'OK', onPress: () => console.log('OK Pressed') }],
+        { cancelable: false },
       );
     } catch (err) {
       Alert.alert(
         'Save remote Image',
         'Failed to save Image: ' + err.message,
-        [{text: 'OK', onPress: () => console.log('OK Pressed')}],
-        {cancelable: false},
+        [{ text: 'OK', onPress: () => console.log('OK Pressed') }],
+        { cancelable: false },
       );
     }
   };
