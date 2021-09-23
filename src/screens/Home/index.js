@@ -5,7 +5,7 @@ import {
   TouchableOpacity,
   View,
   Text,
-  ScrollView,
+  FlatList,
 } from 'react-native';
 import { useDispatch, useSelector } from 'react-redux';
 import FastImage from 'react-native-fast-image';
@@ -16,8 +16,18 @@ import styles from './styles';
 
 const { colors } = theme;
 
+//EmptyList Component
+const EmptyList = () => {
+  return (
+    <View style={styles.emptyListContainer} testID="emptyView">
+      <Text style={styles.emptyListMessage}>No Images Found</Text>
+    </View>
+  );
+};
+
 // Photo Card Component
 const PhotoCard = ({ photo, onSelectPhoto }) => {
+  console.log('photo card');
   return (
     <TouchableOpacity
       style={styles.imageContainer}
@@ -58,37 +68,10 @@ const Home = ({ navigation }) => {
     dispatch(getGalleryImages(payload));
   }, [dispatch, page]);
 
-  const isCloseToBottom = ({
-    layoutMeasurement,
-    contentOffset,
-    contentSize,
-  }) => {
-    const paddingToBottom = 20;
-    return (
-      layoutMeasurement.height + contentOffset.y >=
-      contentSize.height - paddingToBottom
-    );
-  };
-
   const handlePhotoSelect = photo => {
     navigation.navigate('PhotoView', {
       item: photo,
       itemList: imageList,
-    });
-  };
-
-  const renderImageList = images => {
-    return images.map(image => {
-      return (
-        <PhotoCard
-          testID="photoCard"
-          key={image.id}
-          photo={image}
-          onSelectPhoto={photo => {
-            handlePhotoSelect(photo);
-          }}
-        />
-      );
     });
   };
 
@@ -99,22 +82,28 @@ const Home = ({ navigation }) => {
         barStyle="light-content"
       />
 
-      <ScrollView
+      <FlatList
         testID="photoList"
         contentContainerStyle={styles.imageListContainer}
-        onScroll={({ nativeEvent }) => {
-          if (isCloseToBottom(nativeEvent)) {
-            if (hasNextPage) {
-              getImageList();
-            }
-          }
-        }}>
-        {(imageList && renderImageList(imageList)) || (
-          <View style={styles.emptyListContainer} testID="emptyView">
-            <Text>No Images Found</Text>
-          </View>
+        numColumns={2}
+        data={imageList}
+        renderItem={({ item, index, separators }) => (
+          <PhotoCard
+            testID="photoCard"
+            key={item.id}
+            photo={item}
+            onSelectPhoto={photo => {
+              handlePhotoSelect(photo);
+            }}
+          />
         )}
-      </ScrollView>
+        ListEmptyComponent={<EmptyList />}
+        onEndReached={() => {
+          if (hasNextPage) {
+            getImageList();
+          }
+        }}
+      />
     </SafeAreaView>
   );
 };

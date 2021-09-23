@@ -10,9 +10,8 @@ const styles = StyleSheet.create({
     backgroundColor: colors.primaryImageBackgroundColor,
   },
   imageListContainer: {
-    flexDirection: 'row',
-    flexWrap: 'wrap',
     justifyContent: 'center',
+    alignItems: 'center',
   },
   imageContainer: {
     margin: 5,
